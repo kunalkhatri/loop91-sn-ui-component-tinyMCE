@@ -1,0 +1,59 @@
+{
+  "components": {
+    "x-904640-tinymce-editor-component": {
+      "innerComponents": [],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "TinyMCE Editor",
+        "tileIcon": "./tile-icon/tiny.svg",
+        "description": "TinyMCE Editor",
+        "category": "primitives"
+      },
+      "actions": [
+        {
+          "description": "Input in editor",
+          "label": "User Input",
+          "name": "INPUT",
+          "payload": [
+            {
+              "name" : "content",
+              "label": "Content",
+              "fieldType": "string",
+              "typeMetadata" : {
+                "type":"string"
+              }
+            }
+          ]
+        },
+        {
+          "description": "Content change in editor",
+          "label": "Content Change",
+          "name": "CHANGE",
+          "payload": [
+            {
+              "name" : "content",
+              "label": "Content",
+              "fieldType": "string",
+              "typeMetadata" : {
+                "type":"string"
+              }
+            }
+          ]
+        }
+
+      ],
+      "properties": [
+        {
+          "name": "content",
+          "label": "Content",
+          "fieldType": "string",
+          "defaultValue": "Some content for <b>TinyMCE</b>"
+        }
+      ]
+    }
+  },
+  "scopeName": "x_904640_loop91_3"
+}
